@@ -1,0 +1,22 @@
+[package]
+name = "iuab-wasm"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.77"
+wee_alloc = { version = "0.4.5", optional = true }
+iuab-compile = { path = '../iuab-compile' }
+iuab-vm = { path = '../iuab-vm' }
+iuab-utils = { path = '../iuab-utils' }
+console_error_panic_hook = { version = "0.1.6" }
+
+[features]
+alloc = ["wee_alloc"]
+
+[profile.release]
+opt-level = "s"
+lto = true

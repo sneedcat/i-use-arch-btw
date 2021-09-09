@@ -1,0 +1,11 @@
+[package]
+name = "iuab"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iuab-vm = { path = '../iuab-vm' }
+iuab-compile = { path = '../iuab-compile' }
+structopt = "0.3"

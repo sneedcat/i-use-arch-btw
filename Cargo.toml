@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "iuab-cli",
+    "iuab-vm",
+    "iuab-compile",
+    "iuab-wasm",
+    "iuab-utils",
+]
+default-members = [ "iuab-cli", "iuab-vm", "iuab-compile", "iuab-utils" ]
